@@ -16,7 +16,6 @@ The purpose is to start stubbing out new parts of the application such as:
 - To start compiling the typescript enter: ````npm run tsc````
 - This will start the app running in node, and fire up the chrome tab to see it (automatically, awesome)
 
-
 ## Extras:
 
 - **Arctic Typescript** https://github.com/Phaiax/ArcticTypescript
