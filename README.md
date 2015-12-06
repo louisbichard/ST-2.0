@@ -2,14 +2,29 @@
 
 This is the container for the playground for the basis for Angular 2.0.
 
-The purpose is to start stubbing out new parts of the application such as: 
+# Purpose
 
-- Login / Authentication
-- Basic utilities
-    - API connections
-    - Back end setup
-- Configuring of administration suite
-- 
+- Learn some typescript
+- Learn some Angular 2.0
+- Make some mistakes
+- Make a decision on whether typescript is effective or not
+
+# Todo's:
+
+- Client
+    - Login / Authentication [Client]
+    - Login form
+    - API running utility
+    - Basic my tasks page
+        - Tasks service
+        - Polling mechanism (for live updates)
+    - Admin suite for defining users
+    - Permissions layers
+        - Render different UI's dependent on roles
+- Server
+    - Login / Authentication [Server]
+    - Server utility for Querying
+    - Server utility for DB connection
 
 ## How to: 
 
