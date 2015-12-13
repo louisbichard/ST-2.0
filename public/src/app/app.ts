@@ -1,12 +1,9 @@
 
 import {bootstrap, Component, FORM_DIRECTIVES} from 'angular2/angular2';
+import {Http, HTTP_PROVIDERS, Response} from 'angular2/http';
+
 
 class User {
-  id: number;
-  name: string;
-}
-
-class Tasks {
   id: number;
   name: string;
 }
@@ -14,7 +11,7 @@ class Tasks {
 @Component({
     selector: 'my-app',
       template:`
-      <h1> Welcome to sharktower 2.0 </h1>
+      <h1> Welcome to sharktower 2.0 tasks page </h1>
       <h1>{{title}}</h1>
       <h2>{{hero.name}} details!</h2>
       <div><label>id: </label>{{hero.id}}</div>
@@ -35,10 +32,6 @@ class AppComponent {
       id: 1,
       name: 'Lou Bichard'
     };
-  public tasks: Tasks = [{
-    id: "123",
-    name: "My task"
-  }]
 }
 
 bootstrap(AppComponent);

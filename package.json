@@ -4,7 +4,7 @@
   "description": "Sharktower version 2",
   "main": "index.js",
   "scripts": {
-    "tsc": "tsc -p src -w",
+    "tsc": "tsc -p public/src -w",
     "start": "live-server --open=src"
   },
   "repository": {
@@ -23,7 +23,8 @@
     "express": "^4.13.3",
     "lodash": "^3.10.1",
     "pg": "^4.4.3",
-    "systemjs": "0.19.2"
+    "systemjs": "0.19.2",
+    "tsc": "^1.20150623.0"
   },
   "devDependencies": {
     "live-server": "^0.8.1",

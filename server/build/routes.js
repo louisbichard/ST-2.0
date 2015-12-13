@@ -7,7 +7,7 @@
   module.exports = function(app) {
     return app.get('/task', function(req, res) {
       return runQuery('SELECT * FROM tasks;').then(function(data) {
-        return res.send(data[0], data[1]);
+        return res.send([data[0], data[1]]);
       });
     });
   };
