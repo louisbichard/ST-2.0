@@ -1,7 +1,10 @@
 
 import {bootstrap, Component, FORM_DIRECTIVES} from 'angular2/angular2';
 import {Http, HTTP_PROVIDERS, Response} from 'angular2/http';
+import {POST, GET} from './api'
 
+let getsomeThingFromTheAPI = GET('some new route');
+let postsomeThingFromTheAPI = POST('some new route');
 
 class User {
   id: number;
@@ -18,9 +21,8 @@ class User {
       <div>
         <label>name: </label>
         <div>
-            <input [(ng-model)]="hero.name" placeholder="name">
+            <input [(ng-model)]="hero.name" placeholder="name">                        
         </div>
-        TASKS:
       </div>
       `,
       directives: [FORM_DIRECTIVES]
@@ -28,6 +30,7 @@ class User {
 
 class AppComponent {
   public title = 'Tour of Heroes';
+  public tasks = [1, 2, 3, 4];
   public hero: User = {
       id: 1,
       name: 'Lou Bichard'
