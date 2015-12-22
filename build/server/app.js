@@ -5,6 +5,7 @@ var fs = Promise.promisifyAll(require('fs'));
 console.log('serve node_modules publically!!');
 app.use(express.static('node_modules'));
 app.use('/node_modules', express.static('node_modules'));
+app.use('/bower_components', express.static('bower_components'));
 app.use('/public', express.static('build/public'));
 app.get('/', function (req, res) {
     fs.readFileAsync('index.html', 'utf-8')

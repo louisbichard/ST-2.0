@@ -7,6 +7,7 @@ console.log('serve node_modules publically!!');
 
 app.use(express.static('node_modules'));
 app.use('/node_modules', express.static('node_modules'));
+app.use('/bower_components', express.static('bower_components'));
 app.use('/public', express.static('build/public'));
 
 app.get('/', function (req:object, res:object) {
@@ -15,7 +16,6 @@ app.get('/', function (req:object, res:object) {
        res.send(data); 
   });
 });
-
 
 app.get('/api/task', function (req:object, res:object) {
   return res.send([{

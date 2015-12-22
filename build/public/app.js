@@ -12,24 +12,14 @@ var http_1 = require('angular2/http');
 var api_js_1 = require('./api.js');
 var getsomeThingFromTheAPI = api_js_1.GET('some new route');
 var postsomeThingFromTheAPI = api_js_1.POST('some new route');
-var User = (function () {
-    function User() {
-    }
-    return User;
-})();
 var AppComponent = (function () {
     function AppComponent() {
-        this.title = 'Tour of Heroes';
-        this.tasks = [1, 2, 3, 4];
-        this.hero = {
-            id: 1,
-            name: 'Lou Bichard'
-        };
+        this.user = 'Louis Bichard';
     }
     AppComponent = __decorate([
         angular2_1.Component({
             selector: 'my-app',
-            template: "\n      <h1> Welcome to sharktower 2.0 tasks page </h1>\n      <h1>{{title}}</h1>\n      <h2>{{hero.name}} details!</h2>\n      <div><label>id: </label>{{hero.id}}</div>\n      <div>\n        <label>name: </label>\n        <div>\n            <input [(ng-model)]=\"hero.name\" placeholder=\"name\">                        \n        </div>\n      </div>\n      ",
+            template: "\n    \n      <h1> Welcome to sharktower 2.0 tasks page </h1>\n      <div class=\"row\">\n        <div class=\"col-md-6\">\n            Navigation\n        </div>\n        <div class=\"col-md-6\">\n           Something on the right\n        </div>\n      </div> \n      <h1> Logged in user: {{user}}</h1>\n      ",
             directives: [angular2_1.FORM_DIRECTIVES]
         }), 
         __metadata('design:paramtypes', [])
