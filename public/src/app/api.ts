@@ -1,4 +1,4 @@
-import {log} from './developer_tools.utils';
+import {log} from './developer_tools.utils.js';
 
 class ApiService {
   GET(route: string) {

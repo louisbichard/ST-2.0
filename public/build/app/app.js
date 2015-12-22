@@ -8,9 +8,9 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var angular2_1 = require('angular2/angular2');
-var api_1 = require('./api');
-var getsomeThingFromTheAPI = api_1.GET('some new route');
-var postsomeThingFromTheAPI = api_1.POST('some new route');
+var api_js_1 = require('./api.js');
+var getsomeThingFromTheAPI = api_js_1.GET('some new route');
+var postsomeThingFromTheAPI = api_js_1.POST('some new route');
 var User = (function () {
     function User() {
     }
