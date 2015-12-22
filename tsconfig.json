@@ -8,6 +8,9 @@
         "removeComments": false,
         "noImplicitAny": true,
         "outDir": "./build",
-        "rootDir": "./src"
-    }
+        "rootDir": "src"
+    },
+    "exclude": [
+        "node_modules"
+    ]
 }

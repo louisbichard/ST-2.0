@@ -1,6 +1,6 @@
 
 import {bootstrap, Component, FORM_DIRECTIVES} from 'angular2/angular2';
-import {Http, HTTP_PROVIDERS, Response} from 'angular2/http';
+import {Http, HTTP_PROVIDERS} from 'angular2/http';
 import {GET, POST} from './api.js'
 
 let getsomeThingFromTheAPI = GET('some new route');
@@ -37,4 +37,4 @@ class AppComponent {
     };
 }
 
-bootstrap(AppComponent);
+bootstrap(AppComponent, [HTTP_PROVIDERS]);

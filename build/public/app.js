@@ -8,6 +8,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
     if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
 };
 var angular2_1 = require('angular2/angular2');
+var http_1 = require('angular2/http');
 var api_js_1 = require('./api.js');
 var getsomeThingFromTheAPI = api_js_1.GET('some new route');
 var postsomeThingFromTheAPI = api_js_1.POST('some new route');
@@ -35,5 +36,5 @@ var AppComponent = (function () {
     ], AppComponent);
     return AppComponent;
 })();
-angular2_1.bootstrap(AppComponent);
+angular2_1.bootstrap(AppComponent, [http_1.HTTP_PROVIDERS]);
 //# sourceMappingURL=app.js.map
