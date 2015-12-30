@@ -9,9 +9,25 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 };
 var angular2_1 = require('angular2/angular2');
 var http_1 = require('angular2/http');
-var api_js_1 = require('./api.js');
-var getsomeThingFromTheAPI = api_js_1.GET('some new route');
-var postsomeThingFromTheAPI = api_js_1.POST('some new route');
+// import {Navigation as Nav} from './components/navigation/navigation.component.js'
+var Navigation = (function () {
+    function Navigation() {
+        this.navigations = [
+            'dashboard',
+            'workspace',
+            'meetings'
+        ];
+    }
+    Navigation = __decorate([
+        angular2_1.Component({
+            selector: 'navigation',
+            directives: [angular2_1.NgFor],
+            template: "\n        <h2> Navigation </h2>         \n        <ul *ng-for=\"#navigation of navigations\">  \n           <li>{{navigation}}</li>\n        </ul>\n    "
+        }), 
+        __metadata('design:paramtypes', [])
+    ], Navigation);
+    return Navigation;
+})();
 var AppComponent = (function () {
     function AppComponent() {
         this.user = 'Louis Bichard';
@@ -19,8 +35,8 @@ var AppComponent = (function () {
     AppComponent = __decorate([
         angular2_1.Component({
             selector: 'my-app',
-            template: "\n    \n      <h1> Welcome to sharktower 2.0 tasks page </h1>\n      <div class=\"row\">\n        <div class=\"col-md-6\">\n            Navigation\n        </div>\n        <div class=\"col-md-6\">\n           Something on the right\n        </div>\n      </div> \n      <h1> Logged in user: {{user}}</h1>\n      ",
-            directives: [angular2_1.FORM_DIRECTIVES]
+            template: "\n      <div class=\"row\">\n        <div class=\"col-md-7\">\n            <h2>\n                Sharktower 2.0\n            </h2>\n        </div>\n        <div class=\"col-md-5\">\n            <h2 class=\"text-center\"> Logged in user: {{user}}</h2>\n        </div>\n      </div>\n      <hr>\n      <div class=\"row\">\n        <div class=\"col-md-2\">\n            <navigation></navigation>            \n        </div>\n        <div class=\"col-md-10\">\n           <h2> Content </h2>\n        </div>\n      </div>       \n      ",
+            directives: [angular2_1.FORM_DIRECTIVES, Navigation]
         }), 
         __metadata('design:paramtypes', [])
     ], AppComponent);
