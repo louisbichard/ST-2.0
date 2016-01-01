@@ -16,26 +16,29 @@ import { CapitalizePipe } from '../../pipes/capitalize.pipe';
 export class CustomersComponent {
 
   title: string;
-  listDisplayModeEnabled: boolean;
   customers: any[] = [];
   filteredCustomers: any[] = [];
   sorter: Sorter;
+  tasks: any[] = [{
+      name: "A task",
+      date: "A due date",
+      assignee: "Lou Bichard"
+  },
+    {
+      name: "A task 2",
+      date: "A due date",
+      assignee: "Lucas Garcia"
+  }]
 
   constructor(private dataService: DataService) { }
   
   ngOnInit() {
-    this.title = 'Customers';
-    this.listDisplayModeEnabled = false;
     this.dataService.get('/src/customers.json')
         .subscribe((customers:any[]) => {
           this.customers = this.filteredCustomers = customers;
         });
 
     this.sorter = new Sorter();
-  }
-
-  changeDisplayMode(mode: string) {
-      this.listDisplayModeEnabled = (mode === 'List');
   }
 
   sort(prop: string) {
