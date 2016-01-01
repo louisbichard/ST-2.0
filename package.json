@@ -1,33 +1,23 @@
 {
-  "name": "ST-2.0",
-  "version": "1.0.0",
-  "description": "Sharktower version 2",
-  "main": "index.js",
+  "name": "angular2-starter",
+  "author": "Dan Wahlin",
+  "version": "0.8.0",
   "scripts": {
-    "tsc": "tsc -p public/src -w",
+    "tsc": "tsc --watch",
     "start": "live-server --open=src"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/louisbichard/ST-2.0.git"
-  },
-  "author": "Louis J Bichard",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/louisbichard/ST-2.0/issues"
-  },
-  "homepage": "https://github.com/louisbichard/ST-2.0",
   "dependencies": {
-    "angular2": "2.0.0-alpha.44",
-    "bluebird": "^3.0.6",
-    "express": "^4.13.3",
-    "lodash": "^3.10.1",
-    "pg": "^4.4.3",
-    "systemjs": "0.19.2",
-    "tsc": "^1.20150623.0"
+    "angular2": "2.0.0-beta.0",
+    "systemjs": "^0.19.9",
+    "es6-promise": "^3.0.2",
+    "es6-shim": "^0.34.0",
+    "reflect-metadata": "0.1.2",
+    "rxjs": "5.0.0-beta.0",
+    "zone.js": "0.5.10"
   },
   "devDependencies": {
-    "live-server": "^0.8.1",
-    "typescript": "^1.6.2"
+    "live-server": "^0.9.0",
+    "typescript": "^1.7.5"
   }
 }
