@@ -1,71 +1,331 @@
 0 info it worked if it ends with ok
-1 verbose cli [ 'node', '/usr/local/bin/npm', 'install' ]
+1 verbose cli [ 'node', '/usr/local/bin/npm', 'install', 'bootstrap', '--save' ]
 2 info using npm@2.0.0
 3 info using node@v0.10.32
 4 verbose node symlink /usr/local/bin/node
 5 warn package.json angular2-starter@0.8.0 No repository field.
 6 verbose readDependencies using package.json deps
-7 verbose install where, deps [ '/Users/louisbichard/Documents/developments/ST-2.0',
-7 verbose install   [ 'angular2',
-7 verbose install     'systemjs',
-7 verbose install     'es6-promise',
-7 verbose install     'es6-shim',
-7 verbose install     'reflect-metadata',
-7 verbose install     'rxjs',
-7 verbose install     'zone.js',
-7 verbose install     'live-server',
-7 verbose install     'typescript' ] ]
-8 info preinstall angular2-starter@0.8.0
-9 verbose readDependencies using package.json deps
-10 verbose already installed skipping es6-shim@^0.34.0 /Users/louisbichard/Documents/developments/ST-2.0
-11 verbose already installed skipping reflect-metadata@0.1.2 /Users/louisbichard/Documents/developments/ST-2.0
-12 verbose already installed skipping rxjs@5.0.0-beta.0 /Users/louisbichard/Documents/developments/ST-2.0
-13 verbose already installed skipping zone.js@0.5.10 /Users/louisbichard/Documents/developments/ST-2.0
-14 verbose already installed skipping live-server@^0.9.0 /Users/louisbichard/Documents/developments/ST-2.0
-15 verbose already installed skipping typescript@^1.7.5 /Users/louisbichard/Documents/developments/ST-2.0
-16 verbose already installed skipping angular2@2.0.0-beta.0 /Users/louisbichard/Documents/developments/ST-2.0
-17 verbose already installed skipping systemjs@^0.19.9 /Users/louisbichard/Documents/developments/ST-2.0
-18 verbose already installed skipping es6-promise@^3.0.2 /Users/louisbichard/Documents/developments/ST-2.0
-19 silly resolved []
-20 info build /Users/louisbichard/Documents/developments/ST-2.0
-21 verbose linkStuff [ false,
-21 verbose linkStuff   false,
-21 verbose linkStuff   false,
-21 verbose linkStuff   '/Users/louisbichard/Documents/developments' ]
-22 info linkStuff angular2-starter@0.8.0
-23 verbose linkBins angular2-starter@0.8.0
-24 verbose linkMans angular2-starter@0.8.0
-25 verbose rebuildBundles angular2-starter@0.8.0
-26 verbose rebuildBundles [ '.bin',
-26 verbose rebuildBundles   'angular2',
-26 verbose rebuildBundles   'es6-promise',
-26 verbose rebuildBundles   'es6-shim',
-26 verbose rebuildBundles   'live-server',
-26 verbose rebuildBundles   'reflect-metadata',
-26 verbose rebuildBundles   'rxjs',
-26 verbose rebuildBundles   'systemjs',
-26 verbose rebuildBundles   'typescript',
-26 verbose rebuildBundles   'zone.js' ]
-27 info install angular2-starter@0.8.0
-28 info postinstall angular2-starter@0.8.0
-29 info prepublish angular2-starter@0.8.0
-30 verbose stack Error: The package es6-shim does not satisfy its siblings' peerDependencies requirements!
-30 verbose stack     at /usr/local/lib/node_modules/npm/lib/install.js:98:32
-30 verbose stack     at /usr/local/lib/node_modules/npm/lib/install.js:202:5
-30 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:138:5
-30 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:251:14
-30 verbose stack     at cb (/usr/local/lib/node_modules/npm/node_modules/slide/lib/async-map.js:47:24)
-30 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:251:14
-30 verbose stack     at cb (/usr/local/lib/node_modules/npm/node_modules/slide/lib/async-map.js:47:24)
-30 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:251:14
-30 verbose stack     at cb (/usr/local/lib/node_modules/npm/node_modules/slide/lib/async-map.js:47:24)
-30 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:251:14
-31 verbose cwd /Users/louisbichard/Documents/developments/ST-2.0
-32 error Darwin 14.1.0
-33 error argv "node" "/usr/local/bin/npm" "install"
-34 error node v0.10.32
-35 error npm  v2.0.0
-36 error code EPEERINVALID
-37 error peerinvalid The package es6-shim does not satisfy its siblings' peerDependencies requirements!
-37 error peerinvalid Peer angular2@2.0.0-beta.0 wants es6-shim@^0.33.3
-38 verbose exit [ 1, true ]
+7 verbose cache add [ 'bootstrap', null ]
+8 verbose cache add spec="bootstrap" args=["bootstrap",null]
+9 verbose parsed spec { raw: 'bootstrap',
+9 verbose parsed spec   scope: null,
+9 verbose parsed spec   name: 'bootstrap',
+9 verbose parsed spec   rawSpec: '',
+9 verbose parsed spec   spec: '*',
+9 verbose parsed spec   type: 'range' }
+10 verbose parsed spec { raw: 'bootstrap',
+10 verbose parsed spec   scope: null,
+10 verbose parsed spec   name: 'bootstrap',
+10 verbose parsed spec   rawSpec: '',
+10 verbose parsed spec   spec: '*',
+10 verbose parsed spec   type: 'range' }
+11 verbose addNamed [ 'bootstrap', '*' ]
+12 verbose addNamed [ null, '*' ]
+13 silly lockFile e4afd69d-bootstrap bootstrap@*
+14 verbose lock bootstrap@* /Users/louisbichard/.npm/e4afd69d-bootstrap.lock
+15 silly addNameRange { name: 'bootstrap', range: '*', hasData: false }
+16 verbose mapToRegistry name bootstrap
+17 verbose mapToRegistry uri https://registry.npmjs.org/bootstrap
+18 verbose request on initialization, where is /bootstrap
+19 verbose request after pass 1, where is /bootstrap
+20 verbose request url raw /bootstrap
+21 verbose request resolving registry [ 'https://registry.npmjs.org/', './bootstrap' ]
+22 verbose request after pass 2, where is https://registry.npmjs.org/bootstrap
+23 verbose request no auth needed
+24 info attempt registry request try #1 at 19:28:07
+25 verbose request id 4f6b8bb939091e13
+26 http request GET https://registry.npmjs.org/bootstrap
+27 info retry will retry, error on last attempt: Error: connect ETIMEDOUT
+28 info attempt registry request try #2 at 19:29:38
+29 http request GET https://registry.npmjs.org/bootstrap
+30 http 200 https://registry.npmjs.org/bootstrap
+31 silly registry.get cb [ 200,
+31 silly registry.get   { server: 'CouchDB/1.5.0 (Erlang OTP/R16B03)',
+31 silly registry.get     etag: '"64H21DHS1P6S2N8QFMFAJ4USZ"',
+31 silly registry.get     'content-type': 'application/json',
+31 silly registry.get     'cache-control': 'max-age=300',
+31 silly registry.get     'content-length': '31049',
+31 silly registry.get     'accept-ranges': 'bytes',
+31 silly registry.get     date: 'Fri, 01 Jan 2016 19:28:58 GMT',
+31 silly registry.get     via: '1.1 varnish',
+31 silly registry.get     age: '145',
+31 silly registry.get     connection: 'keep-alive',
+31 silly registry.get     'x-served-by': 'cache-lhr6322-LHR',
+31 silly registry.get     'x-cache': 'HIT',
+31 silly registry.get     'x-cache-hits': '1',
+31 silly registry.get     'x-timer': 'S1451676538.310409,VS0,VE0',
+31 silly registry.get     vary: 'Accept' } ]
+32 silly addNameRange number 2 { name: 'bootstrap', range: '*', hasData: true }
+33 silly addNameRange versions [ 'bootstrap',
+33 silly addNameRange   [ '0.0.1',
+33 silly addNameRange     '0.0.2',
+33 silly addNameRange     '3.1.1',
+33 silly addNameRange     '3.2.0',
+33 silly addNameRange     '3.3.0',
+33 silly addNameRange     '3.3.1',
+33 silly addNameRange     '3.3.2',
+33 silly addNameRange     '3.3.4',
+33 silly addNameRange     '3.3.5',
+33 silly addNameRange     '3.3.6',
+33 silly addNameRange     '4.0.0-alpha.2' ] ]
+34 verbose addNamed [ 'bootstrap', '3.3.6' ]
+35 verbose addNamed [ '3.3.6', '3.3.6' ]
+36 silly lockFile 6ebe7417-bootstrap-3-3-6 bootstrap@3.3.6
+37 verbose lock bootstrap@3.3.6 /Users/louisbichard/.npm/6ebe7417-bootstrap-3-3-6.lock
+38 silly lockFile 6cade07b-rg-bootstrap-bootstrap-3-3-6-tgz https://registry.npmjs.org/bootstrap/-/bootstrap-3.3.6.tgz
+39 verbose lock https://registry.npmjs.org/bootstrap/-/bootstrap-3.3.6.tgz /Users/louisbichard/.npm/6cade07b-rg-bootstrap-bootstrap-3-3-6-tgz.lock
+40 verbose addRemoteTarball [ 'https://registry.npmjs.org/bootstrap/-/bootstrap-3.3.6.tgz',
+40 verbose addRemoteTarball   '8de8f749dc8a743f2ac5b510d988371e3daa6589' ]
+41 info retry fetch attempt 1 at 19:29:39
+42 info attempt registry request try #1 at 19:29:39
+43 http fetch GET https://registry.npmjs.org/bootstrap/-/bootstrap-3.3.6.tgz
+44 http fetch 200 https://registry.npmjs.org/bootstrap/-/bootstrap-3.3.6.tgz
+45 silly fetchAndShaCheck shasum 8de8f749dc8a743f2ac5b510d988371e3daa6589
+46 silly lockFile 6cade07b-rg-bootstrap-bootstrap-3-3-6-tgz https://registry.npmjs.org/bootstrap/-/bootstrap-3.3.6.tgz
+47 silly lockFile 6cade07b-rg-bootstrap-bootstrap-3-3-6-tgz https://registry.npmjs.org/bootstrap/-/bootstrap-3.3.6.tgz
+48 silly lockFile 6ebe7417-bootstrap-3-3-6 bootstrap@3.3.6
+49 silly lockFile 6ebe7417-bootstrap-3-3-6 bootstrap@3.3.6
+50 silly lockFile e4afd69d-bootstrap bootstrap@*
+51 silly lockFile e4afd69d-bootstrap bootstrap@*
+52 silly resolved [ { name: 'bootstrap',
+52 silly resolved     description: 'The most popular front-end framework for developing responsive, mobile first projects on the web.',
+52 silly resolved     version: '3.3.6',
+52 silly resolved     keywords:
+52 silly resolved      [ 'css',
+52 silly resolved        'less',
+52 silly resolved        'mobile-first',
+52 silly resolved        'responsive',
+52 silly resolved        'front-end',
+52 silly resolved        'framework',
+52 silly resolved        'web' ],
+52 silly resolved     homepage: 'http://getbootstrap.com',
+52 silly resolved     author: { name: 'Twitter, Inc.' },
+52 silly resolved     scripts: { test: 'grunt test' },
+52 silly resolved     style: 'dist/css/bootstrap.css',
+52 silly resolved     less: 'less/bootstrap.less',
+52 silly resolved     main: './dist/js/npm',
+52 silly resolved     repository:
+52 silly resolved      { type: 'git',
+52 silly resolved        url: 'git+https://github.com/twbs/bootstrap.git' },
+52 silly resolved     bugs: { url: 'https://github.com/twbs/bootstrap/issues' },
+52 silly resolved     license: 'MIT',
+52 silly resolved     devDependencies:
+52 silly resolved      { btoa: '~1.1.2',
+52 silly resolved        glob: '~6.0.1',
+52 silly resolved        grunt: '~0.4.5',
+52 silly resolved        'grunt-autoprefixer': '~3.0.3',
+52 silly resolved        'grunt-contrib-clean': '~0.6.0',
+52 silly resolved        'grunt-contrib-compress': '~0.14.0',
+52 silly resolved        'grunt-contrib-concat': '~0.5.1',
+52 silly resolved        'grunt-contrib-connect': '~0.11.2',
+52 silly resolved        'grunt-contrib-copy': '~0.8.0',
+52 silly resolved        'grunt-contrib-csslint': '~0.5.0',
+52 silly resolved        'grunt-contrib-cssmin': '~0.14.0',
+52 silly resolved        'grunt-contrib-htmlmin': '~0.6.0',
+52 silly resolved        'grunt-contrib-jade': '~0.15.0',
+52 silly resolved        'grunt-contrib-jshint': '~0.11.2',
+52 silly resolved        'grunt-contrib-less': '~1.1.0',
+52 silly resolved        'grunt-contrib-qunit': '~0.7.0',
+52 silly resolved        'grunt-contrib-uglify': '~0.9.2',
+52 silly resolved        'grunt-contrib-watch': '~0.6.1',
+52 silly resolved        'grunt-csscomb': '~3.1.0',
+52 silly resolved        'grunt-exec': '~0.4.6',
+52 silly resolved        'grunt-html': '~5.0.1',
+52 silly resolved        'grunt-jekyll': '~0.4.2',
+52 silly resolved        'grunt-jscs': '~2.3.0',
+52 silly resolved        'grunt-saucelabs': '~8.6.1',
+52 silly resolved        'grunt-sed': 'github:twbs/grunt-sed#v0.2.0',
+52 silly resolved        'load-grunt-tasks': '~3.3.0',
+52 silly resolved        'markdown-it': '^5.0.0',
+52 silly resolved        'npm-shrinkwrap': '^200.4.0',
+52 silly resolved        'time-grunt': '^1.2.1' },
+52 silly resolved     engines: { node: '>=0.10.1' },
+52 silly resolved     files:
+52 silly resolved      [ 'dist',
+52 silly resolved        'fonts',
+52 silly resolved        'grunt',
+52 silly resolved        'js/*.js',
+52 silly resolved        'less/**/*.less',
+52 silly resolved        'Gruntfile.js',
+52 silly resolved        'LICENSE' ],
+52 silly resolved     jspm: { main: 'js/bootstrap', shim: [Object], files: [Object] },
+52 silly resolved     gitHead: '81df608a40bf0629a1dc08e584849bb1e43e0b7a',
+52 silly resolved     _id: 'bootstrap@3.3.6',
+52 silly resolved     _shasum: '8de8f749dc8a743f2ac5b510d988371e3daa6589',
+52 silly resolved     _from: 'bootstrap@*',
+52 silly resolved     _npmVersion: '2.11.3',
+52 silly resolved     _nodeVersion: '0.12.7',
+52 silly resolved     _npmUser: { name: 'twbs', email: 'getbootstrap@gmail.com' },
+52 silly resolved     dist:
+52 silly resolved      { shasum: '8de8f749dc8a743f2ac5b510d988371e3daa6589',
+52 silly resolved        tarball: 'http://registry.npmjs.org/bootstrap/-/bootstrap-3.3.6.tgz' },
+52 silly resolved     maintainers: [ [Object] ],
+52 silly resolved     directories: {},
+52 silly resolved     _resolved: 'https://registry.npmjs.org/bootstrap/-/bootstrap-3.3.6.tgz' } ]
+53 info install bootstrap@3.3.6 into /Users/louisbichard/Documents/developments/ST-2.0
+54 info installOne bootstrap@3.3.6
+55 verbose node_modules/bootstrap unbuild
+56 verbose gentlyRm vacuuming /Users/louisbichard/Documents/developments/ST-2.0/node_modules/bootstrap
+57 verbose tar unpack /Users/louisbichard/.npm/bootstrap/3.3.6/package.tgz
+58 silly lockFile 124c74a7-ts-ST-2-0-node-modules-bootstrap tar:///Users/louisbichard/Documents/developments/ST-2.0/node_modules/bootstrap
+59 verbose lock tar:///Users/louisbichard/Documents/developments/ST-2.0/node_modules/bootstrap /Users/louisbichard/.npm/124c74a7-ts-ST-2-0-node-modules-bootstrap.lock
+60 silly lockFile f1419c88--npm-bootstrap-3-3-6-package-tgz tar:///Users/louisbichard/.npm/bootstrap/3.3.6/package.tgz
+61 verbose lock tar:///Users/louisbichard/.npm/bootstrap/3.3.6/package.tgz /Users/louisbichard/.npm/f1419c88--npm-bootstrap-3-3-6-package-tgz.lock
+62 verbose gentlyRm vacuuming /Users/louisbichard/Documents/developments/ST-2.0/node_modules/bootstrap
+63 silly gunzTarPerm modes [ '755', '644' ]
+64 silly gunzTarPerm extractEntry package.json
+65 silly gunzTarPerm extractEntry README.md
+66 silly gunzTarPerm extractEntry LICENSE
+67 silly gunzTarPerm extractEntry Gruntfile.js
+68 silly gunzTarPerm extractEntry CHANGELOG.md
+69 silly gunzTarPerm extractEntry dist/css/bootstrap-theme.css
+70 silly gunzTarPerm extractEntry dist/css/bootstrap-theme.css.map
+71 silly gunzTarPerm extractEntry dist/css/bootstrap-theme.min.css
+72 silly gunzTarPerm extractEntry dist/css/bootstrap-theme.min.css.map
+73 silly gunzTarPerm extractEntry dist/css/bootstrap.css
+74 silly gunzTarPerm extractEntry dist/css/bootstrap.css.map
+75 silly gunzTarPerm extractEntry dist/css/bootstrap.min.css
+76 silly gunzTarPerm extractEntry dist/css/bootstrap.min.css.map
+77 silly gunzTarPerm extractEntry dist/fonts/glyphicons-halflings-regular.eot
+78 silly gunzTarPerm extractEntry dist/fonts/glyphicons-halflings-regular.svg
+79 silly gunzTarPerm extractEntry dist/fonts/glyphicons-halflings-regular.ttf
+80 silly gunzTarPerm extractEntry dist/fonts/glyphicons-halflings-regular.woff
+81 silly gunzTarPerm extractEntry dist/fonts/glyphicons-halflings-regular.woff2
+82 silly gunzTarPerm extractEntry dist/js/bootstrap.js
+83 silly gunzTarPerm extractEntry dist/js/bootstrap.min.js
+84 silly gunzTarPerm extractEntry dist/js/npm.js
+85 silly gunzTarPerm extractEntry fonts/glyphicons-halflings-regular.eot
+86 silly gunzTarPerm extractEntry fonts/glyphicons-halflings-regular.svg
+87 silly gunzTarPerm extractEntry fonts/glyphicons-halflings-regular.ttf
+88 silly gunzTarPerm extractEntry fonts/glyphicons-halflings-regular.woff
+89 silly gunzTarPerm extractEntry fonts/glyphicons-halflings-regular.woff2
+90 silly gunzTarPerm extractEntry grunt/bs-commonjs-generator.js
+91 silly gunzTarPerm extractEntry grunt/bs-glyphicons-data-generator.js
+92 silly gunzTarPerm extractEntry grunt/bs-lessdoc-parser.js
+93 silly gunzTarPerm extractEntry grunt/bs-raw-files-generator.js
+94 silly gunzTarPerm extractEntry grunt/.jshintrc
+95 silly gunzTarPerm extractEntry grunt/configBridge.json
+96 silly gunzTarPerm extractEntry grunt/sauce_browsers.yml
+97 silly gunzTarPerm extractEntry js/affix.js
+98 silly gunzTarPerm extractEntry js/button.js
+99 silly gunzTarPerm extractEntry js/carousel.js
+100 silly gunzTarPerm extractEntry js/collapse.js
+101 silly gunzTarPerm extractEntry js/dropdown.js
+102 silly gunzTarPerm extractEntry js/alert.js
+103 silly gunzTarPerm extractEntry js/popover.js
+104 silly gunzTarPerm extractEntry js/scrollspy.js
+105 silly gunzTarPerm extractEntry js/tab.js
+106 silly gunzTarPerm extractEntry js/tooltip.js
+107 silly gunzTarPerm extractEntry js/transition.js
+108 silly gunzTarPerm extractEntry js/modal.js
+109 silly gunzTarPerm extractEntry less/mixins.less
+110 silly gunzTarPerm extractEntry less/alerts.less
+111 silly gunzTarPerm extractEntry less/badges.less
+112 silly gunzTarPerm extractEntry less/bootstrap.less
+113 silly gunzTarPerm extractEntry less/breadcrumbs.less
+114 silly gunzTarPerm extractEntry less/button-groups.less
+115 silly gunzTarPerm extractEntry less/buttons.less
+116 silly gunzTarPerm extractEntry less/carousel.less
+117 silly gunzTarPerm extractEntry less/close.less
+118 silly gunzTarPerm extractEntry less/code.less
+119 silly gunzTarPerm extractEntry less/component-animations.less
+120 silly gunzTarPerm extractEntry less/dropdowns.less
+121 silly gunzTarPerm extractEntry less/forms.less
+122 silly gunzTarPerm extractEntry less/glyphicons.less
+123 silly gunzTarPerm extractEntry less/grid.less
+124 silly gunzTarPerm extractEntry less/input-groups.less
+125 silly gunzTarPerm extractEntry less/jumbotron.less
+126 silly gunzTarPerm extractEntry less/labels.less
+127 silly gunzTarPerm extractEntry less/list-group.less
+128 silly gunzTarPerm extractEntry less/media.less
+129 silly gunzTarPerm extractEntry less/mixins/nav-vertical-align.less
+130 silly gunzTarPerm extractEntry less/mixins/alerts.less
+131 silly gunzTarPerm extractEntry less/mixins/border-radius.less
+132 silly gunzTarPerm extractEntry less/mixins/buttons.less
+133 silly gunzTarPerm extractEntry less/mixins/center-block.less
+134 silly gunzTarPerm extractEntry less/mixins/clearfix.less
+135 silly gunzTarPerm extractEntry less/mixins/forms.less
+136 silly gunzTarPerm extractEntry less/mixins/gradients.less
+137 silly gunzTarPerm extractEntry less/mixins/grid-framework.less
+138 silly gunzTarPerm extractEntry less/mixins/grid.less
+139 silly gunzTarPerm extractEntry less/mixins/hide-text.less
+140 silly gunzTarPerm extractEntry less/mixins/image.less
+141 silly gunzTarPerm extractEntry less/mixins/labels.less
+142 silly gunzTarPerm extractEntry less/mixins/list-group.less
+143 silly gunzTarPerm extractEntry less/mixins/nav-divider.less
+144 silly gunzTarPerm extractEntry less/mixins/background-variant.less
+145 silly gunzTarPerm extractEntry less/mixins/opacity.less
+146 silly gunzTarPerm extractEntry less/mixins/pagination.less
+147 silly gunzTarPerm extractEntry less/mixins/panels.less
+148 silly gunzTarPerm extractEntry less/mixins/progress-bar.less
+149 silly gunzTarPerm extractEntry less/mixins/reset-filter.less
+150 silly gunzTarPerm extractEntry less/mixins/reset-text.less
+151 silly gunzTarPerm extractEntry less/mixins/resize.less
+152 silly gunzTarPerm extractEntry less/mixins/responsive-visibility.less
+153 silly gunzTarPerm extractEntry less/mixins/size.less
+154 silly gunzTarPerm extractEntry less/mixins/tab-focus.less
+155 silly gunzTarPerm extractEntry less/mixins/table-row.less
+156 silly gunzTarPerm extractEntry less/mixins/text-emphasis.less
+157 silly gunzTarPerm extractEntry less/mixins/text-overflow.less
+158 silly gunzTarPerm extractEntry less/mixins/vendor-prefixes.less
+159 silly gunzTarPerm extractEntry less/modals.less
+160 silly gunzTarPerm extractEntry less/navbar.less
+161 silly gunzTarPerm extractEntry less/navs.less
+162 silly gunzTarPerm extractEntry less/normalize.less
+163 silly gunzTarPerm extractEntry less/pager.less
+164 silly gunzTarPerm extractEntry less/pagination.less
+165 silly gunzTarPerm extractEntry less/panels.less
+166 silly gunzTarPerm extractEntry less/popovers.less
+167 silly gunzTarPerm extractEntry less/print.less
+168 silly gunzTarPerm extractEntry less/progress-bars.less
+169 silly gunzTarPerm extractEntry less/responsive-embed.less
+170 silly gunzTarPerm extractEntry less/responsive-utilities.less
+171 silly gunzTarPerm extractEntry less/scaffolding.less
+172 silly gunzTarPerm extractEntry less/tables.less
+173 silly gunzTarPerm extractEntry less/theme.less
+174 silly gunzTarPerm extractEntry less/thumbnails.less
+175 silly gunzTarPerm extractEntry less/tooltip.less
+176 silly gunzTarPerm extractEntry less/type.less
+177 silly gunzTarPerm extractEntry less/utilities.less
+178 silly gunzTarPerm extractEntry less/variables.less
+179 silly gunzTarPerm extractEntry less/wells.less
+180 silly lockFile 124c74a7-ts-ST-2-0-node-modules-bootstrap tar:///Users/louisbichard/Documents/developments/ST-2.0/node_modules/bootstrap
+181 silly lockFile 124c74a7-ts-ST-2-0-node-modules-bootstrap tar:///Users/louisbichard/Documents/developments/ST-2.0/node_modules/bootstrap
+182 silly lockFile f1419c88--npm-bootstrap-3-3-6-package-tgz tar:///Users/louisbichard/.npm/bootstrap/3.3.6/package.tgz
+183 silly lockFile f1419c88--npm-bootstrap-3-3-6-package-tgz tar:///Users/louisbichard/.npm/bootstrap/3.3.6/package.tgz
+184 info preinstall bootstrap@3.3.6
+185 verbose readDependencies using package.json deps
+186 verbose readDependencies using package.json deps
+187 silly resolved []
+188 verbose about to build /Users/louisbichard/Documents/developments/ST-2.0/node_modules/bootstrap
+189 info build /Users/louisbichard/Documents/developments/ST-2.0/node_modules/bootstrap
+190 verbose linkStuff [ false,
+190 verbose linkStuff   false,
+190 verbose linkStuff   false,
+190 verbose linkStuff   '/Users/louisbichard/Documents/developments/ST-2.0/node_modules' ]
+191 info linkStuff bootstrap@3.3.6
+192 verbose linkBins bootstrap@3.3.6
+193 verbose linkMans bootstrap@3.3.6
+194 verbose rebuildBundles bootstrap@3.3.6
+195 info install bootstrap@3.3.6
+196 info postinstall bootstrap@3.3.6
+197 verbose stack Error: The package es6-shim does not satisfy its siblings' peerDependencies requirements!
+197 verbose stack     at /usr/local/lib/node_modules/npm/lib/install.js:98:32
+197 verbose stack     at /usr/local/lib/node_modules/npm/lib/install.js:202:5
+197 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:138:5
+197 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:251:14
+197 verbose stack     at cb (/usr/local/lib/node_modules/npm/node_modules/slide/lib/async-map.js:47:24)
+197 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:251:14
+197 verbose stack     at cb (/usr/local/lib/node_modules/npm/node_modules/slide/lib/async-map.js:47:24)
+197 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:251:14
+197 verbose stack     at cb (/usr/local/lib/node_modules/npm/node_modules/slide/lib/async-map.js:47:24)
+197 verbose stack     at /usr/local/lib/node_modules/npm/node_modules/read-installed/read-installed.js:251:14
+198 verbose cwd /Users/louisbichard/Documents/developments/ST-2.0
+199 error Darwin 14.1.0
+200 error argv "node" "/usr/local/bin/npm" "install" "bootstrap" "--save"
+201 error node v0.10.32
+202 error npm  v2.0.0
+203 error code EPEERINVALID
+204 error peerinvalid The package es6-shim does not satisfy its siblings' peerDependencies requirements!
+204 error peerinvalid Peer angular2@2.0.0-beta.0 wants es6-shim@^0.33.3
+205 verbose exit [ 1, true ]

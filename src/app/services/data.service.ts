@@ -7,9 +7,9 @@ export class DataService {
 
     constructor(private http: Http) { }
     
-    getCustomers() {
-        return this.http.get('/src/customers.json')
-                        .map((res: Response) => res.json());
+    get(route) {
+        return this.http.get(route)
+            .map((res: Response) => res.json());
     }
 
 }
