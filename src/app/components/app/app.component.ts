@@ -1,7 +1,6 @@
 import { Component } from 'angular2/core';
 import { ROUTER_DIRECTIVES, RouteConfig } from 'angular2/router';
 import { CustomersComponent } from '../customers/customers.component';
-import { OrdersComponent } from '../orders/orders.component';
 
 @Component({ 
   selector: 'app',
@@ -9,8 +8,7 @@ import { OrdersComponent } from '../orders/orders.component';
   directives: [ROUTER_DIRECTIVES],
 })
 @RouteConfig([
-  { path: '/', as: 'Customers', component: CustomersComponent, useAsDefault: true },
-  { path: '/orders/:id', as: 'Orders', component: OrdersComponent    }
+  { path: '/', as: 'Customers', component: CustomersComponent, useAsDefault: true }
 ])
 export class AppComponent {
 
